@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="23.0" y="490.0">DRSOS.view.ADDONSimulatorView</node>
+    <node x="936.2325757575757" y="378.0">DRSOS.model.SimulatorModel</node>
+    <node x="139.27196969696968" y="356.0">DRSOS.view.BaseView</node>
+    <node x="709.4825757575757" y="490.0">DRSOS.model.ADDONSimulatorModel</node>
+    <node x="1204.7719696969696" y="167.0">DRSOS.model.BaseModel</node>
+    <node x="732.2325757575757" y="0.0">DRSOS.model.SIM.Robot</node>
+    <node x="1086.2325757575754" y="356.0">DRSOS.model.EntryModel</node>
+    <node x="1.0" y="503.5">DRSOS.view.SimulatorView</node>
+    <node x="1391.2325757575754" y="367.0">DRSOS.model.MapMakerModel</node>
+    <node x="614.9825757575755" y="711.0">DRSOS.program.Application</node>
+    <node x="741.2325757575757" y="167.0">DRSOS.model.SIM.SIM</node>
+    <node x="607.2325757575757" y="367.0">DRSOS.model.SIM.AddOnSIM</node>
+    <node x="590.4825757575755" y="610.0">DRSOS.controller.Controller</node>
+    <node x="357.9999999999999" y="479.0">DRSOS.view.EntryView</node>
+    <node x="213.0" y="490.0">DRSOS.view.MapMakerView</node>
+    <node x="640.2325757575757" y="222.0">DRSOS.model.SIM.ADDON</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="DRSOS.controller.Controller" target="DRSOS.view.BaseView">
+      <point x="-15.849999999999909" y="-25.5" />
+      <point x="733.1325757575756" y="550.0" />
+      <point x="659.4999999999999" y="550.0" />
+      <point x="659.4999999999999" y="449.0" />
+      <point x="423.67196969696965" y="449.0" />
+      <point x="126.39999999999998" y="36.5" />
+    </edge>
+    <edge source="DRSOS.controller.Controller" target="DRSOS.model.BaseModel">
+      <point x="142.64999999999998" y="-25.5" />
+      <point x="891.6325757575755" y="590.0" />
+      <point x="1543.7325757575754" y="590.0" />
+      <point x="1543.7325757575754" y="326.0" />
+      <point x="1393.7719696969696" y="326.0" />
+      <point x="80.99999999999994" y="69.5" />
+    </edge>
+    <edge source="DRSOS.controller.Controller" target="DRSOS.view.MapMakerView">
+      <point x="-79.25" y="-25.5" />
+      <point x="669.7325757575755" y="570.0" />
+      <point x="275.5" y="570.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="DRSOS.model.EntryModel" target="DRSOS.model.BaseModel">
+      <point x="0.0" y="-36.5" />
+      <point x="1228.7325757575754" y="336.0" />
+      <point x="1285.7719696969696" y="336.0" />
+      <point x="-27.0" y="69.5" />
+    </edge>
+    <edge source="DRSOS.model.MapMakerModel" target="DRSOS.model.BaseModel">
+      <point x="0.0" y="-25.5" />
+      <point x="1462.2325757575754" y="336.0" />
+      <point x="1339.7719696969696" y="336.0" />
+      <point x="27.0" y="69.5" />
+    </edge>
+    <edge source="DRSOS.controller.Controller" target="DRSOS.view.EntryView">
+      <point x="-47.549999999999955" y="-25.5" />
+      <point x="701.4325757575756" y="560.0" />
+      <point x="503.4999999999999" y="560.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="DRSOS.view.SimulatorView" target="DRSOS.view.BaseView">
+      <point x="0.0" y="-1.0" />
+      <point x="2.0" y="449.0" />
+      <point x="170.8719696969697" y="449.0" />
+      <point x="-126.39999999999998" y="36.5" />
+    </edge>
+    <edge source="DRSOS.model.ADDONSimulatorModel" target="DRSOS.model.SimulatorModel">
+      <point x="44.75" y="-14.5" />
+      <point x="843.7325757575757" y="459.0" />
+      <point x="968.7325757575757" y="459.0" />
+      <point x="-32.5" y="14.5" />
+    </edge>
+    <edge source="DRSOS.model.SimulatorModel" target="DRSOS.model.BaseModel">
+      <point x="43.33333333333326" y="-14.5" />
+      <point x="1044.565909090909" y="326.0" />
+      <point x="1231.7719696969696" y="326.0" />
+      <point x="-81.0" y="69.5" />
+    </edge>
+    <edge source="DRSOS.model.ADDONSimulatorModel" target="DRSOS.model.SIM.AddOnSIM">
+      <point x="-44.75" y="-14.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="DRSOS.controller.Controller" target="DRSOS.model.SimulatorModel">
+      <point x="47.549999999999955" y="-25.5" />
+      <point x="796.5325757575755" y="560.0" />
+      <point x="1033.7325757575757" y="560.0" />
+      <point x="32.5" y="14.5" />
+    </edge>
+    <edge source="DRSOS.controller.Controller" target="DRSOS.model.MapMakerModel">
+      <point x="110.95000000000005" y="-25.5" />
+      <point x="859.9325757575756" y="580.0" />
+      <point x="1462.2325757575754" y="580.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="DRSOS.model.SIM.AddOnSIM" target="DRSOS.model.SIM.ADDON">
+      <point x="-73.5" y="-25.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="DRSOS.model.SIM.SIM" target="DRSOS.model.SIM.Robot">
+      <point x="78.0" y="-69.5" />
+      <point x="975.2325757575757" y="142.0" />
+      <point x="979.7325757575757" y="142.0" />
+      <point x="82.5" y="58.5" />
+    </edge>
+    <edge source="DRSOS.controller.Controller" target="DRSOS.view.ADDONSimulatorView">
+      <point x="-110.94999999999993" y="-25.5" />
+      <point x="638.0325757575756" y="580.0" />
+      <point x="108.0" y="580.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="DRSOS.model.SimulatorModel" target="DRSOS.model.SIM.SIM">
+      <point x="0.0" y="-14.5" />
+      <point x="104.0" y="69.5" />
+    </edge>
+    <edge source="DRSOS.view.MapMakerView" target="DRSOS.view.BaseView">
+      <point x="0.0" y="-14.5" />
+      <point x="275.5" y="459.0" />
+      <point x="297.2719696969697" y="459.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="DRSOS.controller.Controller" target="DRSOS.model.ADDONSimulatorModel">
+      <point x="15.850000000000023" y="-25.5" />
+      <point x="764.8325757575756" y="550.0" />
+      <point x="798.9825757575757" y="550.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="DRSOS.view.EntryView" target="DRSOS.view.BaseView">
+      <point x="0.0" y="-25.5" />
+      <point x="503.4999999999999" y="459.0" />
+      <point x="360.4719696969696" y="459.0" />
+      <point x="63.19999999999993" y="36.5" />
+    </edge>
+    <edge source="DRSOS.program.Application" target="DRSOS.controller.Controller">
+      <point x="-67.0" y="-47.5" />
+      <point x="681.9825757575755" y="686.0" />
+      <point x="669.7325757575755" y="686.0" />
+      <point x="-79.25" y="25.5" />
+    </edge>
+    <edge source="DRSOS.view.ADDONSimulatorView" target="DRSOS.view.BaseView">
+      <point x="0.0" y="-14.5" />
+      <point x="108.0" y="459.0" />
+      <point x="234.07196969696963" y="459.0" />
+      <point x="-63.200000000000045" y="36.5" />
+    </edge>
+    <edge source="DRSOS.controller.Controller" target="DRSOS.view.SimulatorView">
+      <point x="-142.64999999999986" y="-25.5" />
+      <point x="606.3325757575757" y="590.0" />
+      <point x="2.0" y="590.0" />
+      <point x="0.0" y="1.0" />
+    </edge>
+    <edge source="DRSOS.controller.Controller" target="DRSOS.model.EntryModel">
+      <point x="79.25" y="-25.5" />
+      <point x="828.2325757575755" y="570.0" />
+      <point x="1228.7325757575754" y="570.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="DRSOS.model.SIM.AddOnSIM" target="DRSOS.model.SIM.SIM">
+      <point x="73.5" y="-25.5" />
+      <point x="827.7325757575757" y="336.0" />
+      <point x="793.2325757575757" y="336.0" />
+      <point x="-104.0" y="69.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6590066716085989" x="1034.5" y="312.84983127109115" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

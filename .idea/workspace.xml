@@ -1,0 +1,1551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c28580ac-9822-4957-9896-642d11558773" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/model/SIM/ADDON.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/model/ADDONSimulatorModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/view/ADDONSimulatorView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/model/SIM/AddOnSIM.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/program/Application.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/data/BLOCKTYPE.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/model/BaseModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/view/BaseView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/data/Block.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/controller/Controller.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/data/Coordinate.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/data/DIRECTION.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/model/EntryModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/view/EntryView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/data/Map.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/model/MapMakerModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/view/MapMakerView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/view/MapViewCallbackEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/view/MapViewPanel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/model/ModelCallbackEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/model/SIM/Robot.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/data/SENSOR.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/model/SIM/SIM.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/model/SimulatorModel.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DRSOS/view/SimulatorView.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+    </list>
+    <ignored path="UOS_SoftwareEngineering_2014_fall.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="autoscrollToSource" value="true" />
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="UOS_SoftwareEngineering_2014_fall" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="EntryModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DRSOS/model/EntryModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding>
+                <element signature="e#210#211#0" expanded="true" />
+                <element signature="e#240#241#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Package.uml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DRSOS/Package.uml">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement />
+              <nodes>
+                <node x="103.47916666666669" y="210.8828125">DRSOS.controller</node>
+                <node x="153.0625" y="12.8828125">DRSOS.data</node>
+                <node x="20.5625" y="111.8828125">DRSOS.view</node>
+                <node x="175.5625" y="111.8828125">DRSOS.model</node>
+                <node x="107.47916666666669" y="289.8828125">DRSOS.program</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="DRSOS.data" target="DRSOS.data">
+                  <point x="-14.25" y="14.5" />
+                  <point x="195.8125" y="71.8828125" />
+                  <point x="123.06250000000001" y="71.8828125" />
+                  <point x="123.06250000000001" y="20.1328125" />
+                  <point x="-57.0" y="-7.25" />
+                </edge>
+                <edge source="DRSOS.view" target="DRSOS.view">
+                  <point x="-38.33333333333334" y="14.5" />
+                  <point x="39.72916666666666" y="160.8828125" />
+                  <point x="0.5625" y="160.8828125" />
+                  <point x="0.5625" y="126.3828125" />
+                  <point x="-57.5" y="-0.0" />
+                </edge>
+                <edge source="DRSOS.model" target="DRSOS.model">
+                  <point x="-42.0" y="14.5" />
+                  <point x="196.5625" y="160.8828125" />
+                  <point x="155.5625" y="160.8828125" />
+                  <point x="155.5625" y="126.3828125" />
+                  <point x="-63.0" y="-0.0" />
+                </edge>
+                <edge source="DRSOS.controller" target="DRSOS.view">
+                  <point x="-55.5" y="-14.5" />
+                  <point x="121.97916666666669" y="190.8828125" />
+                  <point x="78.0625" y="190.8828125" />
+                  <point x="0.0" y="14.5" />
+                </edge>
+                <edge source="DRSOS.model" target="DRSOS.data">
+                  <point x="-31.5" y="-14.5" />
+                  <point x="207.0625" y="91.8828125" />
+                  <point x="224.3125" y="91.8828125" />
+                  <point x="14.25" y="14.5" />
+                </edge>
+                <edge source="DRSOS.program" target="DRSOS.controller">
+                  <point x="-35.0" y="-14.5" />
+                  <point x="142.47916666666669" y="264.8828125" />
+                  <point x="140.47916666666669" y="264.8828125" />
+                  <point x="-37.0" y="14.5" />
+                </edge>
+                <edge source="DRSOS.controller" target="DRSOS.model">
+                  <point x="55.5" y="-14.5" />
+                  <point x="232.97916666666669" y="190.8828125" />
+                  <point x="280.5625" y="190.8828125" />
+                  <point x="42.0" y="14.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="-53.5" y="107.0" />
+              <SelectedNodes />
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>public</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SIM.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DRSOS/model/SIM/SIM.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="93" max-vertical-offset="780">
+              <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#442#443#0" expanded="true" />
+                <element signature="e#489#490#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddOnSIM.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DRSOS/model/SIM/AddOnSIM.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ADDON.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DRSOS/model/SIM/ADDON.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.uml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/DRSOS/Main.uml">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement />
+              <nodes>
+                <node x="23.0" y="490.0">DRSOS.view.ADDONSimulatorView</node>
+                <node x="936.2325757575757" y="378.0">DRSOS.model.SimulatorModel</node>
+                <node x="139.27196969696968" y="356.0">DRSOS.view.BaseView</node>
+                <node x="709.4825757575757" y="490.0">DRSOS.model.ADDONSimulatorModel</node>
+                <node x="1204.7719696969696" y="167.0">DRSOS.model.BaseModel</node>
+                <node x="732.2325757575757" y="0.0">DRSOS.model.SIM.Robot</node>
+                <node x="1086.2325757575754" y="356.0">DRSOS.model.EntryModel</node>
+                <node x="1.0" y="503.5">DRSOS.view.SimulatorView</node>
+                <node x="1391.2325757575754" y="367.0">DRSOS.model.MapMakerModel</node>
+                <node x="614.9825757575755" y="711.0">DRSOS.program.Application</node>
+                <node x="741.2325757575757" y="167.0">DRSOS.model.SIM.SIM</node>
+                <node x="607.2325757575757" y="367.0">DRSOS.model.SIM.AddOnSIM</node>
+                <node x="590.4825757575755" y="610.0">DRSOS.controller.Controller</node>
+                <node x="357.9999999999999" y="479.0">DRSOS.view.EntryView</node>
+                <node x="213.0" y="490.0">DRSOS.view.MapMakerView</node>
+                <node x="640.2325757575757" y="222.0">DRSOS.model.SIM.ADDON</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="DRSOS.controller.Controller" target="DRSOS.view.BaseView">
+                  <point x="-15.849999999999909" y="-25.5" />
+                  <point x="733.1325757575756" y="550.0" />
+                  <point x="659.4999999999999" y="550.0" />
+                  <point x="659.4999999999999" y="449.0" />
+                  <point x="423.67196969696965" y="449.0" />
+                  <point x="126.39999999999998" y="36.5" />
+                </edge>
+                <edge source="DRSOS.controller.Controller" target="DRSOS.model.BaseModel">
+                  <point x="142.64999999999998" y="-25.5" />
+                  <point x="891.6325757575755" y="590.0" />
+                  <point x="1543.7325757575754" y="590.0" />
+                  <point x="1543.7325757575754" y="326.0" />
+                  <point x="1393.7719696969696" y="326.0" />
+                  <point x="80.99999999999994" y="69.5" />
+                </edge>
+                <edge source="DRSOS.controller.Controller" target="DRSOS.view.MapMakerView">
+                  <point x="-79.25" y="-25.5" />
+                  <point x="669.7325757575755" y="570.0" />
+                  <point x="275.5" y="570.0" />
+                  <point x="0.0" y="14.5" />
+                </edge>
+                <edge source="DRSOS.model.EntryModel" target="DRSOS.model.BaseModel">
+                  <point x="0.0" y="-36.5" />
+                  <point x="1228.7325757575754" y="336.0" />
+                  <point x="1285.7719696969696" y="336.0" />
+                  <point x="-27.0" y="69.5" />
+                </edge>
+                <edge source="DRSOS.model.MapMakerModel" target="DRSOS.model.BaseModel">
+                  <point x="0.0" y="-25.5" />
+                  <point x="1462.2325757575754" y="336.0" />
+                  <point x="1339.7719696969696" y="336.0" />
+                  <point x="27.0" y="69.5" />
+                </edge>
+                <edge source="DRSOS.controller.Controller" target="DRSOS.view.EntryView">
+                  <point x="-47.549999999999955" y="-25.5" />
+                  <point x="701.4325757575756" y="560.0" />
+                  <point x="503.4999999999999" y="560.0" />
+                  <point x="0.0" y="25.5" />
+                </edge>
+                <edge source="DRSOS.view.SimulatorView" target="DRSOS.view.BaseView">
+                  <point x="0.0" y="-1.0" />
+                  <point x="2.0" y="449.0" />
+                  <point x="170.8719696969697" y="449.0" />
+                  <point x="-126.39999999999998" y="36.5" />
+                </edge>
+                <edge source="DRSOS.model.ADDONSimulatorModel" target="DRSOS.model.SimulatorModel">
+                  <point x="44.75" y="-14.5" />
+                  <point x="843.7325757575757" y="459.0" />
+                  <point x="968.7325757575757" y="459.0" />
+                  <point x="-32.5" y="14.5" />
+                </edge>
+                <edge source="DRSOS.model.SimulatorModel" target="DRSOS.model.BaseModel">
+                  <point x="43.33333333333326" y="-14.5" />
+                  <point x="1044.565909090909" y="326.0" />
+                  <point x="1231.7719696969696" y="326.0" />
+                  <point x="-81.0" y="69.5" />
+                </edge>
+                <edge source="DRSOS.model.ADDONSimulatorModel" target="DRSOS.model.SIM.AddOnSIM">
+                  <point x="-44.75" y="-14.5" />
+                  <point x="0.0" y="25.5" />
+                </edge>
+                <edge source="DRSOS.controller.Controller" target="DRSOS.model.SimulatorModel">
+                  <point x="47.549999999999955" y="-25.5" />
+                  <point x="796.5325757575755" y="560.0" />
+                  <point x="1033.7325757575757" y="560.0" />
+                  <point x="32.5" y="14.5" />
+                </edge>
+                <edge source="DRSOS.controller.Controller" target="DRSOS.model.MapMakerModel">
+                  <point x="110.95000000000005" y="-25.5" />
+                  <point x="859.9325757575756" y="580.0" />
+                  <point x="1462.2325757575754" y="580.0" />
+                  <point x="0.0" y="25.5" />
+                </edge>
+                <edge source="DRSOS.model.SIM.AddOnSIM" target="DRSOS.model.SIM.ADDON">
+                  <point x="-73.5" y="-25.5" />
+                  <point x="0.0" y="14.5" />
+                </edge>
+                <edge source="DRSOS.model.SIM.SIM" target="DRSOS.model.SIM.Robot">
+                  <point x="78.0" y="-69.5" />
+                  <point x="975.2325757575757" y="142.0" />
+                  <point x="979.7325757575757" y="142.0" />
+                  <point x="82.5" y="58.5" />
+                </edge>
+                <edge source="DRSOS.controller.Controller" target="DRSOS.view.ADDONSimulatorView">
+                  <point x="-110.94999999999993" y="-25.5" />
+                  <point x="638.0325757575756" y="580.0" />
+                  <point x="108.0" y="580.0" />
+                  <point x="0.0" y="14.5" />
+                </edge>
+                <edge source="DRSOS.model.SimulatorModel" target="DRSOS.model.SIM.SIM">
+                  <point x="0.0" y="-14.5" />
+                  <point x="104.0" y="69.5" />
+                </edge>
+                <edge source="DRSOS.view.MapMakerView" target="DRSOS.view.BaseView">
+                  <point x="0.0" y="-14.5" />
+                  <point x="275.5" y="459.0" />
+                  <point x="297.2719696969697" y="459.0" />
+                  <point x="0.0" y="36.5" />
+                </edge>
+                <edge source="DRSOS.controller.Controller" target="DRSOS.model.ADDONSimulatorModel">
+                  <point x="15.850000000000023" y="-25.5" />
+                  <point x="764.8325757575756" y="550.0" />
+                  <point x="798.9825757575757" y="550.0" />
+                  <point x="0.0" y="14.5" />
+                </edge>
+                <edge source="DRSOS.view.EntryView" target="DRSOS.view.BaseView">
+                  <point x="0.0" y="-25.5" />
+                  <point x="503.4999999999999" y="459.0" />
+                  <point x="360.4719696969696" y="459.0" />
+                  <point x="63.19999999999993" y="36.5" />
+                </edge>
+                <edge source="DRSOS.program.Application" target="DRSOS.controller.Controller">
+                  <point x="-67.0" y="-47.5" />
+                  <point x="681.9825757575755" y="686.0" />
+                  <point x="669.7325757575755" y="686.0" />
+                  <point x="-79.25" y="25.5" />
+                </edge>
+                <edge source="DRSOS.view.ADDONSimulatorView" target="DRSOS.view.BaseView">
+                  <point x="0.0" y="-14.5" />
+                  <point x="108.0" y="459.0" />
+                  <point x="234.07196969696963" y="459.0" />
+                  <point x="-63.200000000000045" y="36.5" />
+                </edge>
+                <edge source="DRSOS.controller.Controller" target="DRSOS.view.SimulatorView">
+                  <point x="-142.64999999999986" y="-25.5" />
+                  <point x="606.3325757575757" y="590.0" />
+                  <point x="2.0" y="590.0" />
+                  <point x="0.0" y="1.0" />
+                </edge>
+                <edge source="DRSOS.controller.Controller" target="DRSOS.model.EntryModel">
+                  <point x="79.25" y="-25.5" />
+                  <point x="828.2325757575755" y="570.0" />
+                  <point x="1228.7325757575754" y="570.0" />
+                  <point x="0.0" y="36.5" />
+                </edge>
+                <edge source="DRSOS.model.SIM.AddOnSIM" target="DRSOS.model.SIM.SIM">
+                  <point x="73.5" y="-25.5" />
+                  <point x="827.7325757575757" y="336.0" />
+                  <point x="793.2325757575757" y="336.0" />
+                  <point x="-104.0" y="69.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.6590066716085989" x="831.1586051743533" y="412.84983127109115" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Methods</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>public</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DRSOS/controller/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="678" max-vertical-offset="1395">
+              <caret line="67" column="73" selection-start-line="67" selection-start-column="73" selection-end-line="67" selection-end-column="73" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SimulatorModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DRSOS/model/SimulatorModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModelCallbackEvent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DRSOS/model/ModelCallbackEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="model.uml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DRSOS/model/model.uml">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement />
+              <nodes>
+                <node x="-345.0" y="60.0">DRSOS.model.SIM.AddOnSIM</node>
+                <node x="381.0" y="0.0">DRSOS.model.SIM.SIM</node>
+                <node x="43.0" y="189.0">DRSOS.model.SimulatorModel</node>
+                <node x="18.5" y="268.0">DRSOS.model.ADDONSimulatorModel</node>
+                <node x="0.0" y="0.0">DRSOS.model.BaseModel</node>
+                <node x="0.0" y="342.0">DRSOS.model.SIM.Robot</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="DRSOS.model.ADDONSimulatorModel" target="DRSOS.model.SimulatorModel">
+                  <point x="0.0" y="-14.5" />
+                  <point x="0.0" y="14.5" />
+                </edge>
+                <edge source="DRSOS.model.SimulatorModel" target="DRSOS.model.BaseModel">
+                  <point x="0.0" y="-14.5" />
+                  <point x="0.0" y="69.5" />
+                </edge>
+                <edge source="DRSOS.model.SIM.AddOnSIM" target="DRSOS.model.SIM.SIM">
+                  <point x="0.0" y="-25.5" />
+                  <point x="0.0" y="14.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="-203.0" y="189.0" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Methods</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>public</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/DRSOS/View/ADDONSimulatorView.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/View/MapMakerView.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/Model/MapMakerModel.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/Model/ManualSimulatorModel.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/Model/ADDONSimulatorModel.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/Controller/EntryController.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/Model/EntryModel.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/View/EntryView.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/Controller/MapMakerController.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/Controller/ManualSimulatorController.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/Controller/BaseController.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/Model/BaseModel.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/Model/BaseSimulatorModel.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/Controller/BaseSimulatorController.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/Controller/ManaulSimulatorController.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/Controller/ADDONSimulatorController.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/Context/BaseContext.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/Context/EntryContext.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/Context/ManualSimulatorContext.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/Context/MapMakerContext.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/Context/ADDONSimulatorContext.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/data/Coordinate.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/View/MapViewCallbackEvent.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/View/MapViewPanel.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/View/BaseView.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/View/ViewCallbackEvent.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/view/ViewCallbackEvent.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/data/Block.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/model/ManualSimulatorModel.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/model/SIM/Robot.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/controller/BaseController.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/context/BaseContext.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/Main.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/context/Context.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/context/EntryContext.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/data/SENSOR.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/model/BaseSimulatorModel.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/program/Application.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/model/MapMakerModel.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/model/ModelCallbackEvent.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/model/EntryModelCallbackEvent.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/model/EntryModel.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/view/BaseView.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/view/EntryView.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/model/ADDONSimulatorModel.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/data/Map.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/model/BaseModel.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/model/SIM/SIM.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/model/SIM/AddOnSIM.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/model/SimulatorModel.java" />
+        <option value="$PROJECT_DIR$/src/DRSOS/controller/Controller.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="1280" />
+    <option name="height" value="709" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="Undo Check Out" />
+    <OptionsSetting value="true" id="Get Latest Version" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/DRSOS" />
+    <property name="restartRequiresConfirmation" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="DRSOS.model" />
+      <recent name="DRSOS.View" />
+      <recent name="DRSOS.Context" />
+      <recent name="DRSOS.Controller" />
+      <recent name="DRSOS.Model" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="DRSOS.data" />
+      <recent name="DRSOS.SIM" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="DRSOS.Main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="UOS_SoftwareEngineering_2014_fall" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c28580ac-9822-4957-9896-642d11558773" name="Default" comment="" />
+      <created>1416478369299</created>
+      <option name="number" value="Default" />
+      <updated>1416478369299</updated>
+      <workItem from="1416478371205" duration="4068000" />
+      <workItem from="1416489000122" duration="181000" />
+      <workItem from="1416489184680" duration="709000" />
+      <workItem from="1416490115026" duration="322000" />
+      <workItem from="1416490963887" duration="83000" />
+      <workItem from="1416726880441" duration="23124000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="28487000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="1280" height="709" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30546874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20546874" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30546874" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Tail" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30546874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20546874" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Tail" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="270">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="270">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="270">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="270">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="270">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UOS_SoftwareEngineering_2014_fall.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/data/DIRECTION.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/data/Coordinate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/data/BLOCKTYPE.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/data/Block.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/view/MapViewCallbackEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/view/MapViewPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/view/ADDONSimulatorView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/view/MapMakerView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/view/SimulatorView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/data/SENSOR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/program/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/view/EntryView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/view/BaseView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/view/View.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-204.5" y="-52.5" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/MVC.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="0.0" y="118.0">DRSOS.controller.Controller</node>
+            <node x="0.0" y="0.0">DRSOS.model.BaseModel</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="DRSOS.controller.Controller" target="DRSOS.model.BaseModel">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="26.0" y="0.0" />
+          <SelectedNodes>
+            <node>DRSOS.model.BaseModel</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>public</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/data/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+          <caret line="14" column="70" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/model/BaseModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="675">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#283#284#0" expanded="true" />
+            <element signature="e#314#315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/model/MapMakerModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/model/SIM/Robot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/model/ADDONSimulatorModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/model/EntryModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="e#210#211#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/Package.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="103.47916666666669" y="210.8828125">DRSOS.controller</node>
+            <node x="153.0625" y="12.8828125">DRSOS.data</node>
+            <node x="20.5625" y="111.8828125">DRSOS.view</node>
+            <node x="175.5625" y="111.8828125">DRSOS.model</node>
+            <node x="107.47916666666669" y="289.8828125">DRSOS.program</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="DRSOS.data" target="DRSOS.data">
+              <point x="-14.25" y="14.5" />
+              <point x="195.8125" y="71.8828125" />
+              <point x="123.06250000000001" y="71.8828125" />
+              <point x="123.06250000000001" y="20.1328125" />
+              <point x="-57.0" y="-7.25" />
+            </edge>
+            <edge source="DRSOS.view" target="DRSOS.view">
+              <point x="-38.33333333333334" y="14.5" />
+              <point x="39.72916666666666" y="160.8828125" />
+              <point x="0.5625" y="160.8828125" />
+              <point x="0.5625" y="126.3828125" />
+              <point x="-57.5" y="-0.0" />
+            </edge>
+            <edge source="DRSOS.model" target="DRSOS.model">
+              <point x="-42.0" y="14.5" />
+              <point x="196.5625" y="160.8828125" />
+              <point x="155.5625" y="160.8828125" />
+              <point x="155.5625" y="126.3828125" />
+              <point x="-63.0" y="-0.0" />
+            </edge>
+            <edge source="DRSOS.controller" target="DRSOS.view">
+              <point x="-55.5" y="-14.5" />
+              <point x="121.97916666666669" y="190.8828125" />
+              <point x="78.0625" y="190.8828125" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="DRSOS.model" target="DRSOS.data">
+              <point x="-31.5" y="-14.5" />
+              <point x="207.0625" y="91.8828125" />
+              <point x="224.3125" y="91.8828125" />
+              <point x="14.25" y="14.5" />
+            </edge>
+            <edge source="DRSOS.program" target="DRSOS.controller">
+              <point x="-35.0" y="-14.5" />
+              <point x="142.47916666666669" y="264.8828125" />
+              <point x="140.47916666666669" y="264.8828125" />
+              <point x="-37.0" y="14.5" />
+            </edge>
+            <edge source="DRSOS.controller" target="DRSOS.model">
+              <point x="55.5" y="-14.5" />
+              <point x="232.97916666666669" y="190.8828125" />
+              <point x="280.5625" y="190.8828125" />
+              <point x="42.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-53.5" y="107.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>public</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/model/SIM/SIM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="780">
+          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#489#490#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/model/SIM/AddOnSIM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/model/ModelCallbackEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/model/SimulatorModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/model/model.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="-345.0" y="60.0">DRSOS.model.SIM.AddOnSIM</node>
+            <node x="381.0" y="0.0">DRSOS.model.SIM.SIM</node>
+            <node x="43.0" y="189.0">DRSOS.model.SimulatorModel</node>
+            <node x="18.5" y="268.0">DRSOS.model.ADDONSimulatorModel</node>
+            <node x="0.0" y="0.0">DRSOS.model.BaseModel</node>
+            <node x="0.0" y="342.0">DRSOS.model.SIM.Robot</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="DRSOS.model.ADDONSimulatorModel" target="DRSOS.model.SimulatorModel">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="DRSOS.model.SimulatorModel" target="DRSOS.model.BaseModel">
+              <point x="0.0" y="-14.5" />
+              <point x="0.0" y="69.5" />
+            </edge>
+            <edge source="DRSOS.model.SIM.AddOnSIM" target="DRSOS.model.SIM.SIM">
+              <point x="0.0" y="-25.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-203.0" y="189.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>public</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/model/SIM/ADDON.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="483" max-vertical-offset="1395">
+          <caret line="67" column="73" selection-start-line="67" selection-start-column="73" selection-end-line="67" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DRSOS/Main.uml">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="23.0" y="490.0">DRSOS.view.ADDONSimulatorView</node>
+            <node x="936.2325757575757" y="378.0">DRSOS.model.SimulatorModel</node>
+            <node x="139.27196969696968" y="356.0">DRSOS.view.BaseView</node>
+            <node x="709.4825757575757" y="490.0">DRSOS.model.ADDONSimulatorModel</node>
+            <node x="1204.7719696969696" y="167.0">DRSOS.model.BaseModel</node>
+            <node x="732.2325757575757" y="0.0">DRSOS.model.SIM.Robot</node>
+            <node x="1086.2325757575754" y="356.0">DRSOS.model.EntryModel</node>
+            <node x="1.0" y="503.5">DRSOS.view.SimulatorView</node>
+            <node x="1391.2325757575754" y="367.0">DRSOS.model.MapMakerModel</node>
+            <node x="614.9825757575755" y="711.0">DRSOS.program.Application</node>
+            <node x="741.2325757575757" y="167.0">DRSOS.model.SIM.SIM</node>
+            <node x="607.2325757575757" y="367.0">DRSOS.model.SIM.AddOnSIM</node>
+            <node x="590.4825757575755" y="610.0">DRSOS.controller.Controller</node>
+            <node x="357.9999999999999" y="479.0">DRSOS.view.EntryView</node>
+            <node x="213.0" y="490.0">DRSOS.view.MapMakerView</node>
+            <node x="640.2325757575757" y="222.0">DRSOS.model.SIM.ADDON</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="DRSOS.controller.Controller" target="DRSOS.view.BaseView">
+              <point x="-15.849999999999909" y="-25.5" />
+              <point x="733.1325757575756" y="550.0" />
+              <point x="659.4999999999999" y="550.0" />
+              <point x="659.4999999999999" y="449.0" />
+              <point x="423.67196969696965" y="449.0" />
+              <point x="126.39999999999998" y="36.5" />
+            </edge>
+            <edge source="DRSOS.controller.Controller" target="DRSOS.model.BaseModel">
+              <point x="142.64999999999998" y="-25.5" />
+              <point x="891.6325757575755" y="590.0" />
+              <point x="1543.7325757575754" y="590.0" />
+              <point x="1543.7325757575754" y="326.0" />
+              <point x="1393.7719696969696" y="326.0" />
+              <point x="80.99999999999994" y="69.5" />
+            </edge>
+            <edge source="DRSOS.controller.Controller" target="DRSOS.view.MapMakerView">
+              <point x="-79.25" y="-25.5" />
+              <point x="669.7325757575755" y="570.0" />
+              <point x="275.5" y="570.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="DRSOS.model.EntryModel" target="DRSOS.model.BaseModel">
+              <point x="0.0" y="-36.5" />
+              <point x="1228.7325757575754" y="336.0" />
+              <point x="1285.7719696969696" y="336.0" />
+              <point x="-27.0" y="69.5" />
+            </edge>
+            <edge source="DRSOS.model.MapMakerModel" target="DRSOS.model.BaseModel">
+              <point x="0.0" y="-25.5" />
+              <point x="1462.2325757575754" y="336.0" />
+              <point x="1339.7719696969696" y="336.0" />
+              <point x="27.0" y="69.5" />
+            </edge>
+            <edge source="DRSOS.controller.Controller" target="DRSOS.view.EntryView">
+              <point x="-47.549999999999955" y="-25.5" />
+              <point x="701.4325757575756" y="560.0" />
+              <point x="503.4999999999999" y="560.0" />
+              <point x="0.0" y="25.5" />
+            </edge>
+            <edge source="DRSOS.view.SimulatorView" target="DRSOS.view.BaseView">
+              <point x="0.0" y="-1.0" />
+              <point x="2.0" y="449.0" />
+              <point x="170.8719696969697" y="449.0" />
+              <point x="-126.39999999999998" y="36.5" />
+            </edge>
+            <edge source="DRSOS.model.ADDONSimulatorModel" target="DRSOS.model.SimulatorModel">
+              <point x="44.75" y="-14.5" />
+              <point x="843.7325757575757" y="459.0" />
+              <point x="968.7325757575757" y="459.0" />
+              <point x="-32.5" y="14.5" />
+            </edge>
+            <edge source="DRSOS.model.SimulatorModel" target="DRSOS.model.BaseModel">
+              <point x="43.33333333333326" y="-14.5" />
+              <point x="1044.565909090909" y="326.0" />
+              <point x="1231.7719696969696" y="326.0" />
+              <point x="-81.0" y="69.5" />
+            </edge>
+            <edge source="DRSOS.model.ADDONSimulatorModel" target="DRSOS.model.SIM.AddOnSIM">
+              <point x="-44.75" y="-14.5" />
+              <point x="0.0" y="25.5" />
+            </edge>
+            <edge source="DRSOS.controller.Controller" target="DRSOS.model.SimulatorModel">
+              <point x="47.549999999999955" y="-25.5" />
+              <point x="796.5325757575755" y="560.0" />
+              <point x="1033.7325757575757" y="560.0" />
+              <point x="32.5" y="14.5" />
+            </edge>
+            <edge source="DRSOS.controller.Controller" target="DRSOS.model.MapMakerModel">
+              <point x="110.95000000000005" y="-25.5" />
+              <point x="859.9325757575756" y="580.0" />
+              <point x="1462.2325757575754" y="580.0" />
+              <point x="0.0" y="25.5" />
+            </edge>
+            <edge source="DRSOS.model.SIM.AddOnSIM" target="DRSOS.model.SIM.ADDON">
+              <point x="-73.5" y="-25.5" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="DRSOS.model.SIM.SIM" target="DRSOS.model.SIM.Robot">
+              <point x="78.0" y="-69.5" />
+              <point x="975.2325757575757" y="142.0" />
+              <point x="979.7325757575757" y="142.0" />
+              <point x="82.5" y="58.5" />
+            </edge>
+            <edge source="DRSOS.controller.Controller" target="DRSOS.view.ADDONSimulatorView">
+              <point x="-110.94999999999993" y="-25.5" />
+              <point x="638.0325757575756" y="580.0" />
+              <point x="108.0" y="580.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="DRSOS.model.SimulatorModel" target="DRSOS.model.SIM.SIM">
+              <point x="0.0" y="-14.5" />
+              <point x="104.0" y="69.5" />
+            </edge>
+            <edge source="DRSOS.view.MapMakerView" target="DRSOS.view.BaseView">
+              <point x="0.0" y="-14.5" />
+              <point x="275.5" y="459.0" />
+              <point x="297.2719696969697" y="459.0" />
+              <point x="0.0" y="36.5" />
+            </edge>
+            <edge source="DRSOS.controller.Controller" target="DRSOS.model.ADDONSimulatorModel">
+              <point x="15.850000000000023" y="-25.5" />
+              <point x="764.8325757575756" y="550.0" />
+              <point x="798.9825757575757" y="550.0" />
+              <point x="0.0" y="14.5" />
+            </edge>
+            <edge source="DRSOS.view.EntryView" target="DRSOS.view.BaseView">
+              <point x="0.0" y="-25.5" />
+              <point x="503.4999999999999" y="459.0" />
+              <point x="360.4719696969696" y="459.0" />
+              <point x="63.19999999999993" y="36.5" />
+            </edge>
+            <edge source="DRSOS.program.Application" target="DRSOS.controller.Controller">
+              <point x="-67.0" y="-47.5" />
+              <point x="681.9825757575755" y="686.0" />
+              <point x="669.7325757575755" y="686.0" />
+              <point x="-79.25" y="25.5" />
+            </edge>
+            <edge source="DRSOS.view.ADDONSimulatorView" target="DRSOS.view.BaseView">
+              <point x="0.0" y="-14.5" />
+              <point x="108.0" y="459.0" />
+              <point x="234.07196969696963" y="459.0" />
+              <point x="-63.200000000000045" y="36.5" />
+            </edge>
+            <edge source="DRSOS.controller.Controller" target="DRSOS.view.SimulatorView">
+              <point x="-142.64999999999986" y="-25.5" />
+              <point x="606.3325757575757" y="590.0" />
+              <point x="2.0" y="590.0" />
+              <point x="0.0" y="1.0" />
+            </edge>
+            <edge source="DRSOS.controller.Controller" target="DRSOS.model.EntryModel">
+              <point x="79.25" y="-25.5" />
+              <point x="828.2325757575755" y="570.0" />
+              <point x="1228.7325757575754" y="570.0" />
+              <point x="0.0" y="36.5" />
+            </edge>
+            <edge source="DRSOS.model.SIM.AddOnSIM" target="DRSOS.model.SIM.SIM">
+              <point x="73.5" y="-25.5" />
+              <point x="827.7325757575757" y="336.0" />
+              <point x="793.2325757575757" y="336.0" />
+              <point x="-104.0" y="69.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.6590066716085989" x="831.1586051743533" y="412.84983127109115" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>public</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

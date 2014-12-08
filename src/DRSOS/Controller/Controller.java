@@ -5,8 +5,10 @@ import DRSOS.data.Coordinate;
 import DRSOS.data.Map;
 import DRSOS.data.SENSOR;
 import DRSOS.model.*;
+import DRSOS.program.Application;
 import DRSOS.view.*;
 
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -32,8 +34,6 @@ public class Controller {
                 if(e.getSource() == "startButton") {
                     onStartButtonClicked();
                 }
-
-
             }
         });
 
@@ -43,6 +43,7 @@ public class Controller {
                 view.updateMap(map);
             }
         });
+        view.init();
     }
 
     public void changeContext(BaseView view, BaseModel model) {

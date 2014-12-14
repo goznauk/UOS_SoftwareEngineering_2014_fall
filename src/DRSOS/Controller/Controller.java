@@ -1,16 +1,13 @@
 package DRSOS.controller;
 
-import DRSOS.data.BLOCKTYPE;
-import DRSOS.data.Coordinate;
-import DRSOS.data.Map;
-import DRSOS.data.SENSOR;
+import DRSOS.entity.*;
 import DRSOS.model.*;
 import DRSOS.program.Application;
 import DRSOS.view.*;
 
-import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 
 /**
  * Created by goznauk on 2014. 11. 23..
@@ -23,19 +20,18 @@ public class Controller {
     public Controller() {
         view = new EntryView();
         model = new EntryModel();
-        ((EntryView)view).setMapIdList(((EntryModel)model).getMapIdList());
+        ((EntryView)view).setMapNameList(((EntryModel)model).getMapNameList());
+        ((EntryView)view).setMapListCallbackEvent(new MapListCallbackEvent() {
+            @Override
+            public void onMapClicked(String name) {
+                ((EntryModel)model).setMapByName(name);
+            }
+        });
         init();
     }
 
     private void init() {
-        view.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if(e.getSource() == "startButton") {
-                    onStartButtonClicked();
-                }
-            }
-        });
+        Application.getApplication().getFrame().getContentPane().removeAll();
 
         model.setCallbackEvent(new ModelCallbackEvent() {
             @Override
@@ -44,30 +40,82 @@ public class Controller {
             }
         });
         view.init();
+        view.setCallbackEvent(new ViewCallbackEvent() {
+            @Override
+            public void onPeekButtonClicked(boolean isVisible) {
+                model.peek(isVisible);
+            }
+
+            @Override
+            public void onBlockChanged(Coordinate coordinate, BLOCKTYPE blocktype) {
+
+            }
+
+            @Override
+            public void onRevealStateChanged(Coordinate coordinate, boolean isVisible) {
+                model.changeRevealState(coordinate, isVisible);
+            }
+
+            @Override
+            public void onRobotChanged(Coordinate coordinate) {
+                model.changeRobotCoordinate(coordinate);
+            }
+
+            @Override
+            public void onGoalChanged(Coordinate coordinate) {
+                model.changeGoalCoordinate(coordinate);
+            }
+
+            @Override
+            public void onSensorUsed(Coordinate coordinate, SENSOR sensor) {
+
+            }
+
+            @Override
+            public void onKeyboardInput(KeyEvent e) {
+
+            }
+
+            @Override
+            public void onContextChangeRequested(CONTEXT context) {
+                changeContext(context);
+            }
+        });
     }
 
-    public void changeContext(BaseView view, BaseModel model) {
-        this.view = view;
-        this.model = model;
+    public void changeContext(CONTEXT context) {
+        if(context == CONTEXT.ENTRY) {
+            view = new EntryView();
+            model = new EntryModel();
+            ((EntryView)view).setMapNameList(((EntryModel)model).getMapNameList());
+            ((EntryView)view).setMapListCallbackEvent(new MapListCallbackEvent() {
+                @Override
+                public void onMapClicked(String name) {
+                    ((EntryModel)model).setMapByName(name);
+                }
+            });
+        } else if (context == CONTEXT.MAPMAKER) {
+            view = new MapMakerView();
+            model = new MapMakerModel();
+        } else if (context == CONTEXT.SIMULATOR) {
+            System.out.println(model.getMap());
+            view = new SimulatorView();
+            model = new SimulatorModel(model.getMap());
+            view.updateMap(model.getMap());
+        } else if (context == CONTEXT.ADDONSIMULATOR) {
+            System.out.println(model.getMap());
+            view = new ADDONSimulatorView();
+            model = new ADDONSimulatorModel(model.getMap());
+            view.updateMap(model.getMap());
+        }
         init();
     }
 
-    private void onMapListClicked(int id) {
-        ((EntryModel)model).setMapById(id);
-    }
-
-    private void onManageMapButtonClicked(Map map) {
-        changeContext(new MapMakerView(), new MapMakerModel(map));
-    }
 
     private void onMapViewClicked(Coordinate coordinate) {
 
     }
 
-    private void onSimulateButtonClicked(boolean hasADDON) {
-        changeContext(new SimulatorView(), new SimulatorModel());
-        changeContext(new ADDONSimulatorView(), new ADDONSimulatorModel());
-    }
 
     private void onStartButtonClicked() {
         // SIM start?
@@ -77,10 +125,6 @@ public class Controller {
 
     }
 
-    private void onReturnButtonClicked() {
-        changeContext(new EntryView(), new EntryModel());
-        ((EntryView)view).setMapIdList(((EntryModel)model).getMapIdList());
-    }
 
     private void onExitButtonClicked() {
 

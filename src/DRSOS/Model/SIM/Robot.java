@@ -1,8 +1,8 @@
 package DRSOS.model.SIM;
 
-import DRSOS.data.Coordinate;
-import DRSOS.data.DIRECTION;
-import DRSOS.data.Map;
+import DRSOS.entity.Coordinate;
+import DRSOS.entity.DIRECTION;
+import DRSOS.entity.Map;
 
 /**
  * Created by goznauk on 2014. 11. 23..

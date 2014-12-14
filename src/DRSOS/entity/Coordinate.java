@@ -1,4 +1,4 @@
-package DRSOS.data;
+package DRSOS.entity;
 
 /**
  * Created by goznauk on 2014. 11. 23..
@@ -25,5 +25,13 @@ public class Coordinate {
 
     public void setY(int y) {
         this.y = y;
+    }
+
+    public int toID() {
+        return x + y*20;
+    }
+
+    public static Coordinate getCoordinateFromID(int id) {
+        return new Coordinate(id%20, id/20);
     }
 }

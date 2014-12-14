@@ -1,7 +1,6 @@
 package DRSOS.view;
 
-import DRSOS.data.Coordinate;
-import DRSOS.data.Map;
+import DRSOS.entity.Map;
 import DRSOS.program.Application;
 
 import javax.swing.*;
@@ -12,20 +11,16 @@ import java.awt.event.ActionListener;
  * Created by goznauk on 2014. 11. 23..
  */
 public class BaseView extends JPanel {
-    //private RightPanel rightPanel = new RightPanel();
-   // private SouthPanel southPanel = new SouthPanel();
     protected MapViewPanel mapViewPanel = new MapViewPanel();
     protected JPanel rightPanel, bottomPanel;
+    protected ViewCallbackEvent callbackEvent;
 
     public BaseView() {
         mapViewPanel = new MapViewPanel();
         rightPanel = new JPanel();
-        //rightPanel.setLayout(new GridLayout(0,1));
         rightPanel.setLayout(new BoxLayout(rightPanel, BoxLayout.Y_AXIS));
-       // rightPanel.setBackground(Color.black);
         bottomPanel = new JPanel();
         bottomPanel.setLayout(new FlowLayout(FlowLayout.RIGHT));
-       // bottomPanel.setBackground(Color.blue);
     }
 
     public void init() {
@@ -44,7 +39,7 @@ public class BaseView extends JPanel {
             gbc.gridy = 0;
             gbc.gridwidth = 2;
             gbc.gridheight = 2;
-            gbc.insets = new Insets(20, 20, 20, 10);
+            gbc.insets = new Insets(10, 10, 10, 5);
             gbl.setConstraints(mapViewPanel, gbc);
             add(mapViewPanel);
 
@@ -52,7 +47,7 @@ public class BaseView extends JPanel {
             gbc.gridy = 0;
             gbc.gridwidth = 1;
             gbc.gridheight = 2;
-            gbc.insets = new Insets(20, 10, 20, 20);
+            gbc.insets = new Insets(10, 5, 10, 10);
             gbl.setConstraints(rightPanel, gbc);
             add(rightPanel);
 
@@ -83,7 +78,11 @@ public class BaseView extends JPanel {
     }
 
     public void updateMap(Map map) {
-
+        mapViewPanel.init(map);
+        Application.getApplication().getFrame().setVisible(true);
     }
 
+    public void setCallbackEvent(ViewCallbackEvent callbackEvent) {
+        this.callbackEvent = callbackEvent;
+    }
 }

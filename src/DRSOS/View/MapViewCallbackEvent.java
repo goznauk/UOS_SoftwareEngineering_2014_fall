@@ -1,6 +1,6 @@
 package DRSOS.view;
 
-import DRSOS.data.Coordinate;
+import DRSOS.entity.Coordinate;
 
 /**
  * Created by goznauk on 2014. 11. 23..

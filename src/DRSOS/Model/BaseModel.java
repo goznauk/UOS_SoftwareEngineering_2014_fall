@@ -1,9 +1,10 @@
 package DRSOS.model;
 
 
-import DRSOS.data.BLOCKTYPE;
-import DRSOS.data.Coordinate;
-import DRSOS.data.Map;
+import DRSOS.entity.BLOCKTYPE;
+import DRSOS.entity.Block;
+import DRSOS.entity.Coordinate;
+import DRSOS.entity.Map;
 
 /**
  * Created by goznauk on 2014. 11. 23..
@@ -28,6 +29,37 @@ public abstract class BaseModel {
         this.callbackEvent = event;
     }
 
+    public void peek(boolean isVisible) {
+        for (Block b : map.getBlocks()) {
+            if(isVisible) {
+                b.reveal();
+            } else {
+                b.conceal();
+            }
+        }
+        callbackEvent.onMapChanged(map);
+    }
+
+    public void changeRevealState(Coordinate coordinate, boolean isVisible) {
+        Block b = map.getBlocks()[coordinate.toID()];
+        if(isVisible) {
+            b.reveal();
+        } else {
+            b.conceal();
+        }
+        callbackEvent.onMapChanged(map);
+    }
+
+    public void changeRobotCoordinate(Coordinate coordinate) {
+        map.setRobot(coordinate);
+        callbackEvent.onMapChanged(map);
+    }
+
+    public void changeGoalCoordinate(Coordinate coordinate) {
+        map.setGoal(coordinate);
+        callbackEvent.onMapChanged(map);
+    }
+
     public void setBlock(Coordinate coordinate, BLOCKTYPE blocktype) {
         map.setBlock(coordinate, blocktype);
         callbackEvent.onMapChanged(map);
@@ -42,4 +74,6 @@ public abstract class BaseModel {
         map.setBlock(coordinate, blocktype, isVisible);
         callbackEvent.onMapChanged(map);
     }
+
+
 }

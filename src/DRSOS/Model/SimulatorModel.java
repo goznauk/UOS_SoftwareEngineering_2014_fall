@@ -1,5 +1,6 @@
 package DRSOS.model;
 
+import DRSOS.entity.Map;
 import DRSOS.model.SIM.SIM;
 
 /**
@@ -9,7 +10,8 @@ public class SimulatorModel extends BaseModel {
     protected SIM sim;
 
 
-    public SimulatorModel() {
+    public SimulatorModel(Map map) {
+        super(map);
         sim = new SIM(map);
         sim.setCallbackEvent(callbackEvent);
     }

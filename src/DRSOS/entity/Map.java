@@ -100,11 +100,17 @@ public class Map {
     }
 
     public void setBlock(Coordinate coordinate, BLOCKTYPE blocktype) {
-
+        Block block = blocks[coordinate.toID()];
+        block.setBlocktype(blocktype);
     }
 
     public void setBlock(Coordinate coordinate, boolean isVisible) {
-
+        Block block = blocks[coordinate.toID()];
+        if(isVisible) {
+            block.reveal();
+        } else {
+            block.conceal();
+        }
     }
 
     public void setBlock(Coordinate coordinate, BLOCKTYPE blocktype, boolean isVisible) {
@@ -133,14 +139,4 @@ public class Map {
         this.goal = goal;
     }
 
-
-    @Override
-    public String toString() {
-        String str = "";
-
-        for(int i = 0; i < 20; i++) {
-        }
-
-        return str;
-    }
 }

@@ -48,6 +48,10 @@ public class SimulatorView extends BaseView implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == btn_setStart) {
+            if(btn_setGoal.isSelected()) {
+                btn_setGoal.setSelected(false);
+            }
+
             JToggleButton jToggleButton = (JToggleButton)e.getSource();
             if (jToggleButton.isSelected()) {
                 mapViewPanel.setCallbackEvent(new MapViewCallbackEvent() {
@@ -65,6 +69,10 @@ public class SimulatorView extends BaseView implements ActionListener {
                 });
             }
         } else if (e.getSource() == btn_setGoal) {
+            if(btn_setStart.isSelected()) {
+                btn_setStart.setSelected(false);
+            }
+
             JToggleButton jToggleButton = (JToggleButton)e.getSource();
             if (jToggleButton.isSelected()) {
                 mapViewPanel.setCallbackEvent(new MapViewCallbackEvent() {

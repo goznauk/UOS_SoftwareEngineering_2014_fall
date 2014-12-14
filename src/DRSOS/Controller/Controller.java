@@ -3,9 +3,9 @@ package DRSOS.controller;
 import DRSOS.entity.*;
 import DRSOS.model.*;
 import DRSOS.program.Application;
+import DRSOS.util.FileManager;
 import DRSOS.view.*;
 
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 
@@ -20,11 +20,11 @@ public class Controller {
     public Controller() {
         view = new EntryView();
         model = new EntryModel();
-        ((EntryView)view).setMapNameList(((EntryModel)model).getMapNameList());
+        ((EntryView)view).setMapNameList(((EntryModel) model).getMapNameList());
         ((EntryView)view).setMapListCallbackEvent(new MapListCallbackEvent() {
             @Override
             public void onMapClicked(String name) {
-                ((EntryModel)model).setMapByName(name);
+                ((EntryModel) model).setMapByName(name);
             }
         });
         init();
@@ -48,13 +48,25 @@ public class Controller {
 
             @Override
             public void onBlockChanged(Coordinate coordinate, BLOCKTYPE blocktype) {
-
+                model.setBlock(coordinate, blocktype);
             }
 
             @Override
             public void onRevealStateChanged(Coordinate coordinate, boolean isVisible) {
                 model.changeRevealState(coordinate, isVisible);
             }
+
+            @Override
+            public void onSaveButtonClicked() {
+                FileManager.saveMapAsCsv(model.getMap());
+            }
+
+            @Override
+            public void onDeleteButtonClicked(String name) {
+                FileManager.deleteMapByName(name);
+                changeContext(CONTEXT.ENTRY);
+            }
+
 
             @Override
             public void onRobotChanged(Coordinate coordinate) {
@@ -97,6 +109,7 @@ public class Controller {
         } else if (context == CONTEXT.MAPMAKER) {
             view = new MapMakerView();
             model = new MapMakerModel();
+            view.updateMap(model.getMap());
         } else if (context == CONTEXT.SIMULATOR) {
             System.out.println(model.getMap());
             view = new SimulatorView();

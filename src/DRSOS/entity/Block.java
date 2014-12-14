@@ -20,6 +20,10 @@ public class Block {
         return blocktype;
     }
 
+    public void setBlocktype(BLOCKTYPE blocktype) {
+        this.blocktype = blocktype;
+    }
+
     public boolean isVisible() {
         return isVisible;
     }

@@ -20,7 +20,7 @@ public class EntryView extends BaseView implements ActionListener {
     ArrayList<JToggleButton> mapListButtons;
 
     JPanel buttonPanel;
-    JButton btn_simulate, btn_make;
+    JButton btn_delete, btn_make;
     JToggleButton btn_peek, btn_reveal;
 
     JCheckBox chk_withAddon;
@@ -31,8 +31,6 @@ public class EntryView extends BaseView implements ActionListener {
 
         mapListPanel = new JPanel();
         mapListPanel.setLayout(new BoxLayout(mapListPanel, BoxLayout.Y_AXIS));
-        //mapListPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
-
 
         btn_make = new JButton("+ make");
         btn_make.addActionListener(this);
@@ -48,17 +46,18 @@ public class EntryView extends BaseView implements ActionListener {
         buttonPanel.setLayout(new BoxLayout(buttonPanel, BoxLayout.Y_AXIS));
         buttonPanel.setBorder(BorderFactory.createEmptyBorder(10 , 10 , 10 , 10));
 
-        btn_simulate = new JButton("simulate");
+        btn_delete = new JButton("delete");
+        btn_delete.addActionListener(this);
         btn_peek = new JToggleButton("peek");
         btn_peek.addActionListener(this);
         btn_reveal = new JToggleButton("reveal");
         btn_reveal.addActionListener(this);
 
-        btn_simulate.setMaximumSize(new Dimension(Integer.MAX_VALUE, 40));
+        btn_delete.setMaximumSize(new Dimension(Integer.MAX_VALUE, 40));
         btn_peek.setMaximumSize(new Dimension(Integer.MAX_VALUE, 40));
         btn_reveal.setMaximumSize(new Dimension(Integer.MAX_VALUE, 40));
 
-        buttonPanel.add(btn_simulate);
+        buttonPanel.add(btn_delete);
         buttonPanel.add(btn_peek);
         buttonPanel.add(btn_reveal);
 
@@ -108,6 +107,14 @@ public class EntryView extends BaseView implements ActionListener {
             }
         } else if (e.getSource() == btn_exit) {
             System.exit(0);
+        } else if (e.getSource() == btn_delete) {
+            for(JToggleButton button : mapListButtons) {
+                if(button.isSelected()) {
+                    callbackEvent.onDeleteButtonClicked(((JToggleButton)button).getText());
+                }
+            }
+        } else if (e.getSource() == btn_make) {
+            callbackEvent.onContextChangeRequested(CONTEXT.MAPMAKER);
         } else if (e.getSource() == btn_peek) {
             JToggleButton jToggleButton = (JToggleButton)e.getSource();
             if (jToggleButton.isSelected()) {
@@ -133,6 +140,9 @@ public class EntryView extends BaseView implements ActionListener {
                 });
             }
         } else if (mapListButtons.contains(e.getSource())) {
+            btn_peek.setSelected(false);
+            btn_reveal.setSelected(false);
+
             for (JToggleButton btn : mapListButtons) {
                 btn.setSelected(false);
                 btn.setBackground(Color.white);

@@ -41,12 +41,7 @@ public abstract class BaseModel {
     }
 
     public void changeRevealState(Coordinate coordinate, boolean isVisible) {
-        Block b = map.getBlocks()[coordinate.toID()];
-        if(isVisible) {
-            b.reveal();
-        } else {
-            b.conceal();
-        }
+        map.setBlock(coordinate, isVisible);
         callbackEvent.onMapChanged(map);
     }
 

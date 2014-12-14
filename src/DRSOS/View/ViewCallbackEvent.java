@@ -14,6 +14,8 @@ public interface ViewCallbackEvent {
     public void onPeekButtonClicked(boolean peek);
     public void onBlockChanged(Coordinate coordinate, BLOCKTYPE blocktype);
     public void onRevealStateChanged(Coordinate coordinate, boolean isVisible);
+    public void onSaveButtonClicked();
+    public void onDeleteButtonClicked(String name);
     public void onRobotChanged(Coordinate coordinate);
     public void onGoalChanged(Coordinate coordinate);
     public void onSensorUsed(Coordinate coordinate, SENSOR sensor);

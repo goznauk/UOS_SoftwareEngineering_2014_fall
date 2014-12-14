@@ -52,10 +52,7 @@ public class EntryModel extends BaseModel {
     public void setMapByName(String name) {
         // get map from db by id
         for (File f : mapFiles) {
-            System.out.println(f.getName().split("\\.")[0]);
-
             if(f.getName().split("\\.")[0].equals(name)) {
-                System.out.println("DIDI");
                 map = new Map(f);
                 callbackEvent.onMapChanged(map);
             }

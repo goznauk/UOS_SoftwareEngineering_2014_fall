@@ -14,11 +14,10 @@ public class Application {
     private Controller controller;
 
     private Application() {
-        // init jframe
-        frame = new JFrame("DRSOS");
-        frame.setLayout(new GridLayout(1,0));
-        frame.getContentPane().setBounds(20, 20, 400, 270);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame = new JFrame();
+        frame.setTitle("DRSOS");
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setResizable(false);
     }
 
     public static Application getApplication() {
@@ -35,5 +34,9 @@ public class Application {
 
     public JFrame getFrame() {
         return frame;
+    }
+
+    public Controller getController() {
+        return controller;
     }
 }

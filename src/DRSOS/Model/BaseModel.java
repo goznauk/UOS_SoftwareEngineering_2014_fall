@@ -1,10 +1,10 @@
 package DRSOS.model;
 
 
-import DRSOS.entity.BLOCKTYPE;
-import DRSOS.entity.Block;
-import DRSOS.entity.Coordinate;
-import DRSOS.entity.Map;
+import DRSOS.domain.BLOCKTYPE;
+import DRSOS.domain.Block;
+import DRSOS.domain.Coordinate;
+import DRSOS.domain.Map;
 
 /**
  * Created by goznauk on 2014. 11. 23..

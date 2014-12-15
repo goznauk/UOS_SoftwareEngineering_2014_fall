@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="UOS_SoftwareEngineering_2014_fall:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/UOS_SoftwareEngineering_2014_fall_jar</output-path>
+    <root id="archive" name="UOS_SoftwareEngineering_2014_fall.jar">
+      <element id="module-output" name="UOS_SoftwareEngineering_2014_fall" />
+    </root>
+  </artifact>
+</component>

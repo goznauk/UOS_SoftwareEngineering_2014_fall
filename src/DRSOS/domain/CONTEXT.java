@@ -1,4 +1,4 @@
-package DRSOS.entity;
+package DRSOS.domain;
 
 /**
  * Created by goznauk on 2014. 12. 15..

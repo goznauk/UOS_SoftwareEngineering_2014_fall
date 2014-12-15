@@ -1,7 +1,7 @@
 package DRSOS.view;
 
-import DRSOS.entity.CONTEXT;
-import DRSOS.entity.Coordinate;
+import DRSOS.domain.CONTEXT;
+import DRSOS.domain.Coordinate;
 
 import javax.swing.*;
 import javax.swing.border.LineBorder;

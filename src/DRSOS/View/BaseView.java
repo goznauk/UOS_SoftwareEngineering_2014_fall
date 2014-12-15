@@ -1,6 +1,6 @@
 package DRSOS.view;
 
-import DRSOS.entity.Map;
+import DRSOS.domain.Map;
 import DRSOS.program.Application;
 
 import javax.swing.*;
@@ -66,7 +66,7 @@ public class BaseView extends JPanel {
         JFrame frame = Application.getApplication().getFrame();
         frame.getContentPane().add(this);
         frame.pack();
-        frame.setVisible(true);
+        Application.getApplication().refresh();
         Dimension scrDim = Toolkit.getDefaultToolkit().getScreenSize();
         int xPos = (scrDim.width - frame.getWidth()) / 2;
         int yPos = (scrDim.height - frame.getHeight()) / 2;
@@ -79,7 +79,8 @@ public class BaseView extends JPanel {
 
     public void updateMap(Map map) {
         mapViewPanel.init(map);
-        Application.getApplication().getFrame().setVisible(true);
+        Application.getApplication().refresh();
+     //   Application.getApplication().getFrame().setVisible(true);
     }
 
     public void setCallbackEvent(ViewCallbackEvent callbackEvent) {

@@ -1,6 +1,6 @@
 package DRSOS.model;
 
-import DRSOS.entity.Map;
+import DRSOS.domain.Map;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

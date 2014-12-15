@@ -1,8 +1,8 @@
 package DRSOS.view;
 
-import DRSOS.entity.BLOCKTYPE;
-import DRSOS.entity.CONTEXT;
-import DRSOS.entity.Coordinate;
+import DRSOS.domain.BLOCKTYPE;
+import DRSOS.domain.CONTEXT;
+import DRSOS.domain.Coordinate;
 
 import javax.swing.*;
 import java.awt.*;

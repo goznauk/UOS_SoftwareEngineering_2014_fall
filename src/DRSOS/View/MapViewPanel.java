@@ -1,8 +1,8 @@
 package DRSOS.view;
 
-import DRSOS.entity.BLOCKTYPE;
-import DRSOS.entity.Coordinate;
-import DRSOS.entity.Map;
+import DRSOS.domain.BLOCKTYPE;
+import DRSOS.domain.Coordinate;
+import DRSOS.domain.Map;
 
 import javax.swing.*;
 import javax.swing.border.LineBorder;
@@ -16,24 +16,32 @@ import java.awt.event.ActionListener;
  */
 public class MapViewPanel extends JPanel implements ActionListener {
 
-    private Map map;
-
     private JButton[] buttons;
 
     public MapViewPanel() {
+        buttons = new JButton[400];
+        setLayout(new GridLayout(20, 0, 0, 0));
+        setPreferredSize(new Dimension(15 * 20, 15 * 20));
+        for(int i = 0; i<400; i++) {
+            buttons[i] = new JButton();
+
+            buttons[i].setContentAreaFilled(false);
+            buttons[i].setOpaque(true);
+            buttons[i].addActionListener(this);
+            buttons[i].setSize(15, 15);
+
+            add(buttons[i]);
+        }
         init(new Map());
+
     }
 
     public void init(Map map) {
-        removeAll();
-        buttons = new JButton[400];
-        setLayout(new GridLayout(20, 0, 0, 0));
-        setPreferredSize(new Dimension(15*20, 15*20));
+        for (int i = 0; i < map.getBlocks().length; i++) {
+            buttons[i].setText("");
 
-        for ( int i = 0; i < map.getBlocks().length; i++ ) {
-            buttons[i] = new JButton();
             buttons[i].setBorder(new LineBorder(Color.lightGray, 1));
-            if(!map.getBlocks()[i].isVisible()) {
+            if (!map.getBlocks()[i].isVisible()) {
                 buttons[i].setBackground(Color.gray);
             } else if (map.getBlocks()[i].getBlocktype() == BLOCKTYPE.DEFAULT) {
                 buttons[i].setBackground(Color.WHITE);
@@ -42,25 +50,14 @@ public class MapViewPanel extends JPanel implements ActionListener {
             } else if (map.getBlocks()[i].getBlocktype() == BLOCKTYPE.COLORBLOB) {
                 buttons[i].setBackground(Color.yellow);
             }
-
-            if(map.getGoal() != null && map.getGoal().toID() == i) {
-                buttons[i].setText("X");
-            } else if(map.getRobot() != null && map.getRobot().toID() == i) {
+            if (map.getRobot() != null && map.getRobot().toID() == i) {
                 buttons[i].setText("O");
+                continue;
             }
-            buttons[i].setContentAreaFilled(false);
-            buttons[i].setOpaque(true);
-            buttons[i].addActionListener(this);
-            buttons[i].setSize(15, 15);
 
-
-            buttons[i].setUI(new MetalButtonUI() {
-                @Override
-                protected Color getSelectColor() {
-                    return super.getSelectColor();
-                }
-            });
-            this.add(buttons[i]);
+            if (map.getGoal() != null && map.getGoal().toID() == i) {
+                buttons[i].setText("X");
+            }
         }
     }
 

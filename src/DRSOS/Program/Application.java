@@ -18,6 +18,7 @@ public class Application {
         frame.setTitle("DRSOS");
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.setResizable(false);
+        frame.setVisible(true);
     }
 
     public static Application getApplication() {
@@ -26,6 +27,12 @@ public class Application {
             application = new Application();
         }
         return application;
+    }
+
+    public void refresh() {
+        frame.invalidate();
+        frame.validate();
+        frame.repaint();
     }
 
     public void run() {

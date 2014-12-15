@@ -1,9 +1,6 @@
 package DRSOS.view;
 
-import DRSOS.entity.BLOCKTYPE;
-import DRSOS.entity.CONTEXT;
-import DRSOS.entity.Coordinate;
-import DRSOS.entity.SENSOR;
+import DRSOS.domain.*;
 
 import java.awt.event.KeyEvent;
 
@@ -17,8 +14,12 @@ public interface ViewCallbackEvent {
     public void onSaveButtonClicked();
     public void onDeleteButtonClicked(String name);
     public void onRobotChanged(Coordinate coordinate);
+    public void onSimulationStarted();
+    public void onRobotMoveTry();
+    public void onRobotMoveTry(DIRECTION d);
     public void onGoalChanged(Coordinate coordinate);
-    public void onSensorUsed(Coordinate coordinate, SENSOR sensor);
-    public void onKeyboardInput(KeyEvent e);
+    public void onColorBlobSensorUsed();
+    public void onHazardSensorUsed(DIRECTION direction);
+    public Coordinate onPositionSensorUsed();
     public void onContextChangeRequested(CONTEXT context);
 }

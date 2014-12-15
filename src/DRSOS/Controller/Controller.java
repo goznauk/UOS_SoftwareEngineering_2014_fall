@@ -1,9 +1,9 @@
 package DRSOS.controller;
 
-import DRSOS.entity.*;
+import DRSOS.domain.*;
 import DRSOS.model.*;
 import DRSOS.program.Application;
-import DRSOS.util.FileManager;
+import DRSOS.dao.FileManager;
 import DRSOS.view.*;
 
 import java.awt.event.ActionListener;
@@ -14,6 +14,8 @@ import java.awt.event.KeyEvent;
  */
 public class Controller {
     private BaseModel model;
+    private IRobot robot;
+    private ADDON addon;
     private BaseView view;
     private ActionListener actionListener;
 
@@ -41,6 +43,7 @@ public class Controller {
         });
         view.init();
         view.setCallbackEvent(new ViewCallbackEvent() {
+
             @Override
             public void onPeekButtonClicked(boolean isVisible) {
                 model.peek(isVisible);
@@ -74,19 +77,49 @@ public class Controller {
             }
 
             @Override
+            public void onSimulationStarted() {
+                model.setBlock(model.getMap().getRobot(), true);
+            }
+
+            @Override
+            public void onRobotMoveTry() {
+                addon.init();
+                Runnable r = new Runnable() {
+                    @Override
+                    public void run() {
+                        addon.moveRobot(model.getMap().getRobot(), model.getMap().getGoal());
+                    }
+                };
+                Thread thread = new Thread(r);
+                thread.start();
+            }
+
+            @Override
+            public void onRobotMoveTry(DIRECTION d) {
+                robot.move(d);
+            }
+
+            @Override
             public void onGoalChanged(Coordinate coordinate) {
                 model.changeGoalCoordinate(coordinate);
             }
 
             @Override
-            public void onSensorUsed(Coordinate coordinate, SENSOR sensor) {
+            public void onColorBlobSensorUsed() {
+                    robot.sensorColorBlob();
+            }
+
+            @Override
+            public void onHazardSensorUsed(DIRECTION direction) {
+                System.out.println(robot.sensorHazard(direction));
 
             }
 
             @Override
-            public void onKeyboardInput(KeyEvent e) {
-
+            public Coordinate onPositionSensorUsed() {
+                return robot.sensorPosition();
             }
+
 
             @Override
             public void onContextChangeRequested(CONTEXT context) {
@@ -114,11 +147,14 @@ public class Controller {
             System.out.println(model.getMap());
             view = new SimulatorView();
             model = new SimulatorModel(model.getMap());
+            robot = (SimulatorModel)model;
             view.updateMap(model.getMap());
         } else if (context == CONTEXT.ADDONSIMULATOR) {
             System.out.println(model.getMap());
             view = new ADDONSimulatorView();
-            model = new ADDONSimulatorModel(model.getMap());
+            model = new SimulatorModel(model.getMap());
+            robot = (SimulatorModel)model;
+            addon = new ADDON(robot);
             view.updateMap(model.getMap());
         }
         init();

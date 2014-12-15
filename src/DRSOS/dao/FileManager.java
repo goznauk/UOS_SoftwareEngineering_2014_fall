@@ -1,7 +1,7 @@
-package DRSOS.util;
+package DRSOS.dao;
 
-import DRSOS.entity.Coordinate;
-import DRSOS.entity.Map;
+import DRSOS.domain.Coordinate;
+import DRSOS.domain.Map;
 
 import java.io.BufferedWriter;
 import java.io.File;

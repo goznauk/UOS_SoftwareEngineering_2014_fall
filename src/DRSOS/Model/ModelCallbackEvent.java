@@ -1,6 +1,6 @@
 package DRSOS.model;
 
-import DRSOS.entity.Map;
+import DRSOS.domain.Map;
 
 /**
  * Created by goznauk on 2014. 11. 23..

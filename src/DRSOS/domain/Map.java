@@ -1,4 +1,4 @@
-package DRSOS.entity;
+package DRSOS.domain;
 
 import java.io.BufferedReader;
 import java.io.File;

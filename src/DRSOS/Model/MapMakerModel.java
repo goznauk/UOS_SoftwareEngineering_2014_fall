@@ -1,12 +1,6 @@
 package DRSOS.model;
 
-import DRSOS.entity.Block;
-import DRSOS.entity.Coordinate;
-import DRSOS.entity.Map;
-
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
+import DRSOS.domain.Block;
 
 /**
  * Created by goznauk on 2014. 11. 23..
